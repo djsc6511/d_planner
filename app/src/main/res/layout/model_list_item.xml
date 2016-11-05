@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/model_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e7e7e7" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#ffffff"
+        android:layout_marginTop="5px"
+        android:layout_marginBottom="5px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="208dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.17"
+            android:layout_marginTop="17px"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="20px"
+            android:paddingRight="30px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:textSize="35px"
+                android:text="sample" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:textSize="20px"
+                android:text="sample" />
+
+            <TextView
+                android:id="@+id/tvRoom"
+                android:layout_width="match_parent"
+                android:layout_height="55px"
+                android:textSize="20px"
+                android:text="sample" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegist1"
+            android:layout_width="107px"
+            android:layout_height="64px"
+            android:layout_marginRight="20px"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/regist"
+            android:textColor="#ffffff"
+            android:textSize="50px"
+            android:focusable="false" />
+    </LinearLayout>
+
+</FrameLayout>

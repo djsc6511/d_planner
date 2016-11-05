@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#f1592a"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnBackButton"
+            android:layout_width="124px"
+            android:layout_height="100px"
+            android:background="@drawable/backbutton" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="수업추가"
+            android:textColor="#ffffff"
+            android:textSize="50px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:background="@drawable/bg_img"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="110px"
+                android:layout_height="60px"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="40px"
+                android:gravity="center"
+                android:text="강의명"
+                android:textColor="#ffffff"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/etCourseName"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="40px"
+                android:background="#ffffff"
+                android:ems="10"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:textSize="40px" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="110px"
+                android:layout_height="60px"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="40px"
+                android:gravity="center"
+                android:text="교수명"
+                android:textColor="#ffffff"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/etTeacher"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="40px"
+                android:background="#ffffff"
+                android:ems="10"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:textSize="40px" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="110px"
+                android:layout_height="60px"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="40px"
+                android:gravity="center"
+                android:text="장소"
+                android:textColor="#ffffff"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/etCourseRoom"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="50px"
+                android:layout_marginTop="40px"
+                android:background="#ffffff"
+                android:ems="10"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:textSize="40px" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="36px"
+            android:text="시간"
+            android:textSize="40px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/radioTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioEveryWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매주" />
+
+                <RadioButton
+                    android:id="@+id/radioSpecialDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="특정날짜" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutEveryWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnMon"
+                    android:layout_width="84px"
+                    android:layout_height="51px"
+                    android:layout_marginLeft="4px"
+                    android:background="@drawable/monday" />
+
+                <Button
+                    android:id="@+id/btnTue"
+                    android:layout_width="84px"
+                    android:layout_height="51px"
+                    android:layout_marginLeft="2px"
+                    android:background="@drawable/tuesday" />
+
+                <Button
+                    android:id="@+id/btnWed"
+                    android:layout_width="84px"
+                    android:layout_height="51px"
+                    android:layout_marginLeft="2px"
+                    android:background="@drawable/wednesday" />
+
+                <Button
+                    android:id="@+id/btnThu"
+                    android:layout_width="84px"
+                    android:layout_height="51px"
+                    android:layout_marginLeft="2px"
+                    android:background="@drawable/thursday" />
+
+                <Button
+                    android:id="@+id/btnFri"
+                    android:layout_width="84px"
+                    android:layout_height="51px"
+                    android:layout_marginLeft="2px"
+                    android:background="@drawable/friday" />
+
+                <Button
+                    android:id="@+id/btnSat"
+                    android:layout_width="84px"
+                    android:layout_height="51px"
+                    android:layout_marginLeft="2px"
+                    android:background="@drawable/saturday" />
+
+                <Button
+                    android:id="@+id/btnSun"
+                    android:layout_width="84px"
+                    android:layout_height="51px"
+                    android:layout_marginLeft="2px"
+                    android:background="@drawable/sunday" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:layout_marginRight="70px"
+                android:layout_marginTop="30px"
+                android:layout_weight="1" >
+            </ListView>
+
+            <Button
+                android:id="@+id/btnRegist1"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="#f1592a"
+                android:text="등 록"
+                android:textColor="#ffffff"
+                android:textSize="45px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSpecialDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50px"
+                        android:text="날    짜"
+                        android:textSize="40px" />
+
+                    <TextView
+                        android:id="@+id/tvSpecialDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginTop="50px"
+                        android:text="2015년 3월 4일"
+                        android:textColor="#55000000"
+                        android:textSize="40px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50px"
+                        android:text="시작시간"
+                        android:textSize="40px" />
+
+                    <TextView
+                        android:id="@+id/tvSpecialTime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginTop="50px"
+                        android:text="18:00"
+                        android:textColor="#55000000"
+                        android:textSize="40px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50px"
+                        android:text="종료시간"
+                        android:textSize="40px" />
+
+                    <TextView
+                        android:id="@+id/tvSpecialTime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginTop="50px"
+                        android:text="19:00"
+                        android:textColor="#55000000"
+                        android:textSize="40px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegist2"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="#f1592a"
+                android:text="등 록"
+                android:textColor="#ffffff"
+                android:textSize="45px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

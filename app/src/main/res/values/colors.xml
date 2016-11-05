@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="event_color_01">#59dbe0</color>
+    <color name="event_color_02">#f57f68</color>
+    <color name="event_color_03">#87d288</color>
+    <color name="event_color_04">#f8b552</color>
+    <color name="event_color_05">#F15F5F</color>
+    <color name="event_color_06">#4682b4</color>
+    <color name="event_color_07">#4169e1</color>
+    <color name="event_color_08">#A566FF</color>
+    <color name="event_color_09">#88000000</color>
+
+    <color name="rippelColor">#FFFFFF</color>
+</resources>
